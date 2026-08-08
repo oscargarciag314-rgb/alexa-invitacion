@@ -11,7 +11,7 @@
 
   <meta
     name="theme-color"
-    content="#dcebe4"
+    content="#dceee7"
   >
 
   <title>
@@ -44,7 +44,7 @@
     content="img/foto-alexa.jpeg"
   >
 
-  <!-- Google Fonts -->
+  <!-- FUENTES -->
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -57,7 +57,7 @@
   >
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
 
@@ -72,13 +72,31 @@
 
 <body>
 
-  <!-- ==========================================
+  <!-- ======================================
        PORTADA
-  =========================================== -->
+  ======================================= -->
 
   <header class="portada">
 
-    <div class="portada-contenido">
+    <!-- FOTO -->
+
+    <div class="portada-foto">
+
+      <img
+        src="img/foto-alexa.jpeg"
+        alt="Alexa García González"
+      >
+
+    </div>
+
+
+    <!-- TEXTO PORTADA -->
+
+    <div class="portada-panel">
+
+      <div class="adorno-superior">
+        ✦
+      </div>
 
       <span class="portada-etiqueta">
         Graduación de Arquitectura
@@ -96,26 +114,37 @@
         García González
       </h2>
 
-      <!-- FOTO ALEXA -->
 
-      <div class="foto-portada">
+      <div class="divisor">
 
-        <img
-          src="img/foto-alexa.jpeg"
-          alt="Alexa García González"
-        >
+        <span></span>
+
+        <b>✦</b>
+
+        <span></span>
 
       </div>
 
-      <p class="hero-texto">
-        Hay momentos que merecen ser
-        compartidos con las personas
-        que forman parte de nuestra historia.
+
+      <p class="portada-saludo">
+        Tenemos una invitación especial para ti
       </p>
 
+
+      <p class="portada-datos">
+
+        Sábado 10 de octubre de 2026
+
+        <br>
+
+        Terraza AREZZA
+
+      </p>
+
+
       <a
-        href="#detalles"
         class="boton-principal"
+        href="#detalles"
       >
         Ver invitación
       </a>
@@ -125,11 +154,69 @@
   </header>
 
 
-  <!-- ==========================================
-       DETALLES DEL EVENTO
-  =========================================== -->
+  <!-- ======================================
+       INVITACIÓN / HERO
+  ======================================= -->
+
+  <section class="invitacion">
+
+    <div class="hero">
+
+      <!-- FOTO -->
+
+      <div class="hero-foto">
+
+        <img
+          src="img/foto-alexa.jpeg"
+          alt="Alexa García González"
+        >
+
+      </div>
+
+
+      <!-- TEXTO -->
+
+      <div class="hero-texto">
+
+        <span class="sobre-titulo">
+          Un sueño que hoy se convierte en realidad
+        </span>
+
+        <h1>
+          Alexa
+        </h1>
+
+        <h2>
+          García González
+        </h2>
+
+
+        <p class="mensaje-hero">
+
+          Después de años de esfuerzo,
+          aprendizaje y grandes momentos,
+          ha llegado el día de celebrar
+          el cierre de una etapa muy especial.
+
+          <br><br>
+
+          Me dará mucha alegría compartir
+          este momento contigo.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
 
   <main>
+
+    <!-- ======================================
+         DETALLES
+    ======================================= -->
 
     <section
       id="detalles"
@@ -168,10 +255,13 @@
           </p>
 
           <p class="hora-evento">
+
             Recepción a partir de las
+
             <strong>
               6:00 p.m.
             </strong>
+
           </p>
 
         </article>
@@ -207,15 +297,16 @@
       </div>
 
 
-      <!-- ======================================
+      <!-- ==================================
            CUENTA REGRESIVA
-      ======================================= -->
+      =================================== -->
 
       <div class="contador-contenedor">
 
         <p class="contador-titulo">
           Faltan
         </p>
+
 
         <div
           class="countdown"
@@ -280,12 +371,11 @@
     </section>
 
 
-    <!-- ==========================================
+    <!-- ======================================
          CONFIRMACIÓN
-    =========================================== -->
+    ======================================= -->
 
     <section class="seccion confirmacion">
-
 
       <!-- CARGANDO -->
 
@@ -303,7 +393,7 @@
       </div>
 
 
-      <!-- INVITACIÓN -->
+      <!-- CONTENIDO PERSONALIZADO -->
 
       <div
         id="contenido"
@@ -314,9 +404,11 @@
           Invitación personalizada
         </span>
 
+
         <p class="invitacion-para">
           Esta invitación es para
         </p>
+
 
         <h2 id="nombreInvitado">
           Invitado
@@ -356,7 +448,7 @@
           </p>
 
 
-          <!-- AQUÍ JS INSERTA ADULTOS Y NIÑOS -->
+          <!-- JS INSERTA ADULTOS Y NIÑOS -->
 
           <div
             id="listaPersonas"
@@ -383,7 +475,7 @@
           </label>
 
 
-          <!-- MENSAJE -->
+          <!-- COMENTARIO -->
 
           <div class="campo">
 
@@ -396,6 +488,7 @@
               </span>
 
             </label>
+
 
             <textarea
               id="comentario"
@@ -475,9 +568,9 @@
     </section>
 
 
-    <!-- ==========================================
+    <!-- ======================================
          MESAS
-    =========================================== -->
+    ======================================= -->
 
     <section class="seccion mesas-evento">
 
@@ -495,9 +588,13 @@
         </h2>
 
         <p id="mesaEstado">
-          La asignación de mesas estará disponible
-          a partir del 9 de octubre de 2026.
+
+          La asignación de mesas estará
+          disponible a partir del
+          9 de octubre de 2026.
+
         </p>
+
 
         <div
           id="listaMesas"
@@ -510,9 +607,9 @@
     </section>
 
 
-    <!-- ==========================================
+    <!-- ======================================
          FOTOS
-    =========================================== -->
+    ======================================= -->
 
     <section class="seccion fotos">
 
@@ -526,9 +623,13 @@
           Comparte tus recuerdos
         </h2>
 
+
         <p id="textoFotos">
-          La carga de fotografías estará disponible
-          únicamente el 10 y 11 de octubre de 2026.
+
+          La carga de fotografías estará
+          disponible únicamente el
+          10 y 11 de octubre de 2026.
+
         </p>
 
 
@@ -569,9 +670,9 @@
   </main>
 
 
-  <!-- ==========================================
+  <!-- ======================================
        FOOTER
-  =========================================== -->
+  ======================================= -->
 
   <footer>
 
@@ -582,9 +683,9 @@
   </footer>
 
 
-  <!-- ==========================================
+  <!-- ======================================
        JAVASCRIPT
-  =========================================== -->
+  ======================================= -->
 
   <script src="js/app.js"></script>
 
