@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e8f3ef">
+
+  <title>Graduación de Alexa García González</title>
+  <meta name="description" content="Acompáñanos a celebrar la graduación de Alexa García González el 10 de octubre de 2026 en Terraza AREZZA.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Graduación de Alexa García González">
+  <meta property="og:description" content="10 de octubre de 2026 · Terraza AREZZA · Zacatecas">
+  <meta property="og:url" content="https://fusion-graduacion-alexa.netlify.app/">
+  <meta property="og:image" content="https://fusion-graduacion-alexa.netlify.app/img/alexa-graduacion.jpeg">
+  <meta property="og:image:secure_url" content="https://fusion-graduacion-alexa.netlify.app/img/alexa-graduacion.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="portada-activa">
+  <section id="portada" class="portada" aria-label="Portada de la invitación">
+    <div class="portada-foto" aria-hidden="true">
+      <img src="img/alexa-graduacion.jpeg" alt="">
+    </div>
+    <div class="portada-panel">
+      <div class="adorno-superior">✦</div>
+      <p class="portada-etiqueta">Graduación de Arquitectura</p>
+      <p class="portada-pretexto">Celebremos juntos a</p>
+      <h1>Alexa</h1>
+      <h2>García González</h2>
+      <div class="divisor"><span></span><b>♥</b><span></span></div>
+      <p id="saludoPortada" class="portada-saludo">Tenemos una invitación especial para ti</p>
+      <div class="portada-datos">
+        <p><strong>10 de octubre de 2026</strong></p>
+        <p>Terraza AREZZA · Zacatecas</p>
+      </div>
+      <button id="abrirInvitacion" class="boton-principal portada-boton" type="button">Abrir invitación</button>
+    </div>
+  </section>
+
+  <main id="invitacion" class="invitacion" aria-hidden="true">
+    <section class="hero">
+      <div class="hero-foto">
+        <img src="img/alexa-graduacion.jpeg" alt="Alexa celebrando su graduación">
+        <div class="hero-degradado"></div>
+      </div>
+      <div class="hero-texto">
+        <span class="insignia">Graduación de Arquitectura</span>
+        <p class="sobre-titulo">Celebremos juntos a</p>
+        <h1>Alexa</h1>
+        <h2>García González</h2>
+        <p class="mensaje-hero">Después de años de esfuerzo, dedicación y sueños, ha llegado el momento de celebrar este gran logro.</p>
+        <a class="boton-principal" href="#detalles">Ver detalles</a>
+      </div>
+    </section>
+
+    <section id="detalles" class="seccion detalles">
+      <div class="encabezado-seccion"><span>Un día para recordar</span><h2>Acompáñanos a celebrar</h2></div>
+      <div class="tarjetas">
+        <article class="tarjeta"><span class="fecha-numero">10</span><h3>Octubre de 2026</h3><p>Sábado</p><p class="hora-evento">Recepción a partir de las <strong>6:00 p.m.</strong></p></article>
+        <article class="tarjeta"><p class="tarjeta-subtitulo">Lugar</p><h3>Terraza AREZZA</h3><p>Zacatecas, Zac.</p><a class="enlace-mapa" href="https://maps.app.goo.gl/QeG4P89BB9GaPTFcA" target="_blank" rel="noopener">Cómo llegar</a></article>
+      </div>
+      <div class="contador-contenedor">
+        <p class="contador-titulo">Faltan</p>
+        <div class="countdown" aria-label="Cuenta regresiva para el evento">
+          <div><strong id="dias">0</strong><span>Días</span></div><div><strong id="horas">0</strong><span>Horas</span></div><div><strong id="minutos">0</strong><span>Minutos</span></div><div><strong id="segundos">0</strong><span>Segundos</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion confirmacion">
+      <div id="cargando" class="panel estado"><div class="spinner"></div><p>Buscando tu invitación personalizada...</p></div>
+      <div id="contenido" class="panel oculto">
+        <span class="insignia">Invitación personalizada</span>
+        <p class="invitacion-para">Esta invitación es para</p>
+        <h2 id="nombreInvitado">Invitado</h2>
+        <div class="pases"><small>Tenemos reservados</small><strong id="pasesPermitidos">0 lugares</strong><div id="resumenPases" class="resumen-invitacion"></div></div>
+        <form id="formConfirmacion" novalidate>
+          <p class="grupo-titulo">Selecciona quiénes asistirán</p>
+          <div id="listaPersonas" class="lista-personas"></div>
+          <label class="persona-check nadie"><input id="nadieAsiste" type="checkbox"><span>Nadie podrá asistir</span></label>
+          <div class="campo"><label for="comentario">Mensaje para Alexa <span>(opcional)</span></label><textarea id="comentario" rows="3" maxlength="250" placeholder="Escribe aquí un mensaje especial..."></textarea></div>
+          <p id="mensajeFormulario" class="mensaje-formulario"></p>
+          <button id="botonConfirmar" class="boton-principal boton-formulario" type="submit">Confirmar asistencia</button>
+        </form>
+      </div>
+      <div id="exito" class="panel estado oculto"><div class="resultado-icono">✓</div><span class="insignia">Confirmación recibida</span><h2>¡Muchas gracias!</h2><p id="mensajeExito"></p></div>
+      <div id="errorGeneral" class="panel estado error oculto"><div class="resultado-icono">!</div><h2>No pudimos abrir esta invitación</h2><p id="mensajeErrorGeneral"></p></div>
+    </section>
+
+    <section class="seccion mesas-evento">
+      <div id="panelMesas" class="panel">
+        <span class="insignia">Tu lugar en la celebración</span>
+        <h2>Asignación de mesas</h2>
+        <p id="mesaEstado">La asignación de mesas estará disponible a partir del 9 de octubre de 2026.</p>
+        <div id="listaMesas" class="lista-mesas oculto"></div>
+      </div>
+    </section>
+
+    <section class="seccion fotos">
+      <div class="panel">
+        <span class="insignia">Fotos del evento</span>
+        <h2>Comparte tus recuerdos</h2>
+        <p id="textoFotos">La carga de fotografías estará disponible únicamente el 10 y 11 de octubre de 2026.</p>
+        <form id="formFotos">
+          <input id="inputFotos" class="input-fotos" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple disabled>
+          <button id="botonFotos" class="boton-principal" type="submit" disabled>Disponible 10 y 11 de octubre</button>
+          <p id="mensajeFotos" class="mensaje-fotos"></p>
+        </form>
+      </div>
+    </section>
+    <footer><p>Con cariño, Alexa García González</p></footer>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
